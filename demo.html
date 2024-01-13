@@ -14,10 +14,8 @@
         function setThemeClass() {
             document.documentElement.className = Telegram.WebApp.colorScheme;
         }
-
         Telegram.WebApp.onEvent('themeChanged', setThemeClass);
         setThemeClass();
-
     </script>
     <style>
         body {
@@ -29,11 +27,9 @@
             padding: 0;
             color-scheme: var(--tg-color-scheme);
         }
-
         a {
             color: var(--tg-theme-link-color, #2678b6);
         }
-
         button {
             display: block;
             width: 100%;
@@ -46,13 +42,11 @@
             color: var(--tg-theme-button-text-color, #ffffff);
             cursor: pointer;
         }
-
         button[disabled] {
             opacity: 0.6;
             cursor: auto;
             pointer-events: none;
         }
-
         button.close_btn {
             /*position: fixed;*/
             position: absolute;
@@ -64,12 +58,10 @@
             padding: 16px 20px;
             text-transform: uppercase;
         }
-
         section {
             padding: 15px 15px 65px;
             text-align: center;
         }
-
         p {
             margin: 40px 0 15px;
         }
