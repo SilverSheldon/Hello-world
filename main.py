@@ -1,6 +1,6 @@
-def recursion(n):
+def factorial(n):
     if n == 1:
         return 1
-    return recursion(n=n-1)
+    return n * factorial(n=n-1)
 
-recursion(n=3)
+factorial(n=3)
